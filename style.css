@@ -1,0 +1,320 @@
+@charset "UTF-8";
+:root {
+    --destaque: #d35050fd;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+   
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    display: grid;
+    grid-template-rows: 1fr 0.7fr 1fr 1fr;  
+    grid-template-columns: 1fr;
+    grid-template-areas: 'header '
+                            'main '
+                                'aside '
+                                    'footer';    
+   
+    background-color: rgb(34, 34, 34);
+}
+header {
+    grid-area: header;
+    text-align: center;
+    background: rgb(34, 34, 34) url(imagens/IMG_20230318_185033360_HDR.jpg) no-repeat ;
+    background-size: cover;
+    
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+nav > ul > li > a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--destaque);
+    transition: width .3s;
+}
+nav > ul > li > a:hover::after {
+    width: 100%;
+    transition: width .5s;
+}
+
+nav > div#name  {
+    margin: 15% 20%;
+    color: #fff;
+    line-height: 80px;
+}
+nav > div#name  strong {
+    color: var(--destaque);
+}
+nav > div#name > h1 {
+    font-size: 2.8em;
+    font-weight: lighter;
+} 
+nav > div#name > h1 > strong {
+    font-size: 2em;
+}
+nav > div#name > p {
+    font-size: 1.2em;
+    color: #ffffff;
+}
+nav > ul {
+    font-weight: lighter;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+    color: #fff;
+    list-style: none;
+}
+nav > ul > li {
+   
+    margin-right: 100px;
+}
+main {
+    grid-area: main;
+    text-align: center;
+    color: #fff;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    
+}
+main > h1 {
+    margin: 5% 5%;
+    
+}
+main > div#projetos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 0 auto;
+    max-width: 900px;
+    transition: 0.5s;
+}
+.access > a {
+   text-decoration: none;
+   font-size: 1.4em;
+   background-color: #5E3383;
+   color: #fff;
+   padding: 10px;
+   border-radius: 10px;
+    
+}
+.access > a:hover {
+    background-color: #512c71;
+}
+.access {
+   margin-bottom: 20px;
+  
+}
+div#projetos > div.proj01 {
+    max-width: 350px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border: 1px solid #272727;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.415);
+    transition: 0.5s;
+}
+div#projetos > div.proj01 > div  {
+    background-color: rgb(34,34,34);
+    width: 100%;
+    
+}
+div#projetos > div.proj01 > div > h1 {
+    padding: 20px;
+    color: var(--destaque);
+}
+div#projetos > div.proj01 > div > div.img > img {
+    width: 350px;
+    height: 280px;
+    object-fit: cover;
+} 
+
+div#projetos > div.proj02 > div > h1 {
+    padding: 20px;
+    color: var(--destaque);
+}
+div#projetos > div.proj02 > div > div.img > img {
+    width: 350px;
+    height: 280px;
+    object-fit: cover;
+} 
+
+div#projetos > div.proj01 > div > p {
+    text-align: justify;
+    text-indent: 1cm;
+    padding: 20px;
+}
+div#projetos > div.proj02 {
+    max-width: 350px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border: 1px solid #272727;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.415);
+    transition: 0.5s;
+}
+div#projetos > div.proj02 > div > p { 
+    text-align: justify;
+    text-indent: 1cm;
+    padding: 20px;
+}
+
+aside {
+    grid-area: aside;
+    text-align: center;
+    color: #fff;
+    padding: 25px 0px 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 35vw;
+    min-width: 250px;
+    height: 50vh;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+} 
+aside > p > strong {
+    color: var(--destaque);
+}  
+
+aside > div > p {
+    text-indent: 1cm;
+    text-align: justify;
+    padding: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+aside > div#sobre {
+    max-width: 400px;
+    
+}
+aside > div#form {
+    max-width: 400px;
+}
+aside > div#skils {
+    max-width: 400px;
+}
+aside > div#skils > div.progress-bar {
+    width: 400px;
+    height: 25px;
+    border: 1px solid #B54545;
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.7s;
+}
+aside > div#skils > div.progress-bar > div.progress-html {
+    border-radius: 10px;
+    width: 40%;
+    height: 100%;
+    background-color: #B54545;
+}
+
+aside > div#skils > div.progress-bar > div.progress-css {
+    border-radius: 10px;
+    width: 30%;
+    height: 100%;
+    background-color: #B54545;
+}
+aside > div#skils > div.progress-bar > div.progress-javascript {
+    border-radius: 10px;
+    width: 10%;
+    height: 100%;
+    background-color: #B54545;
+}
+aside > div  strong{
+    color: var(--destaque);
+}
+aside > div > h1  {
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0fr 1fr 1fr 0.2fr 0.5fr;
+    align-items: center;
+    justify-items: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+#formulario {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   max-width: 500px;
+   gap: 15px;
+}
+#formulario > h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#formulario > #itext {
+   width: 100%;
+}
+#formulario > input[type="button"] {
+    width: 400px;
+    height: 55px;
+    border-radius: 10px;
+    background-color: #B54545;
+    color: #fff;
+    font-size: 30px;
+}
+#formulario > input[type="button"]:hover {
+    background-color: #ab4040;
+    cursor: pointer;
+}
+#social {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+ion-icon {
+    color: #fff;
+    font-size: 40px;
+    transition: 0.5s;
+}
+ion-icon:hover {
+    transition: 0.5s;
+    color: var(--destaque);
+}
+.cop {
+    text-align: center;
+}
+.cop strong {
+    color: var(--destaque);
+}
+
+.material-symbols-outlined {
+   
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48,
+ 
+}
+header span.material-symbols-outlined {
+    display: none;
+}

@@ -1,0 +1,44 @@
+@media screen and (max-width: 910px){
+   
+    header > nav > ul {
+        display: flex;
+        flex-direction: column;
+        padding-left: 12%;
+        margin: 0;
+        background-color: var(--destaque);
+        
+    }
+    header > nav > ul > li {
+        padding-top: 15px;
+        padding-bottom: 10px;
+        display: block;
+        
+    }
+    nav > ul > li > a::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: black;
+        transition: width .3s;
+    }
+    nav > ul > li > a:hover::after {
+        width: 100%;
+        transition: width .4s;
+    }
+    header {
+        background: none;
+    }
+    header span.material-symbols-outlined {
+        display: block;
+        cursor: pointer;
+        color: #fff;
+        background-color: var(--destaque);
+        
+        padding: 10px;
+    }
+    header span.material-symbols-outlined:hover {
+        background-color: rgba(190, 64, 64, 0.992);
+    }
+    
+}
