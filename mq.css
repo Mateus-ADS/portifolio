@@ -1,16 +1,18 @@
 @media screen and (max-width: 910px){
    
     header > nav > ul {
-        display: flex;
-        flex-direction: column;
-        padding-left: 12%;
+        display: none;
+        flex-direction: column; 
         margin: 0;
         background-color: var(--destaque);
         
     }
+    
     header > nav > ul > li {
         padding-top: 15px;
         padding-bottom: 10px;
+        margin: 0;
+        
         display: block;
         
     }
@@ -19,6 +21,7 @@
         display: block;
         width: 0;
         height: 2px;
+        
         background-color: black;
         transition: width .3s;
     }
@@ -39,6 +42,21 @@
     }
     header span.material-symbols-outlined:hover {
         background-color: rgba(190, 64, 64, 0.992);
+    }
+
+    body {
+        display: grid;
+        grid-template-rows: 0.4fr 0.4fr 0.8fr 0.2fr;  
+        grid-template-columns: 1fr;
+        grid-template-areas: 'header '
+                                'main '
+                                    'aside '
+                                        'footer';    
+       
+        background-color: rgb(34, 34, 34);
+    }
+    div#projetos > div.proj01 {
+        margin-top: 20rem;
     }
     
 }

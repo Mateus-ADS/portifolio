@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mq.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   
 </head>
 <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" > </script> 
 <script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js" ></script>
 
-<body onresize="mudouTamanho()">
+<body onresize="changedSize()">
     <header>
-        <nav>
+        <nav >
             <ul id="menu">
                 <li><a href="portifolio.html">Home</a></li>
                 <li><a href="#portifolio">Projetos</a></li>
@@ -22,14 +23,14 @@
                 <li><a href="#contato">Contato</a></li>
                 
             </ul>
-            <span class="material-symbols-outlined" onclick="clickMenu()">
-                menu
-                </span>
-            <div id="name">
-                <h1>Olá, eu sou <br><strong>Mateus Alves </strong> </h1>
-                <p>E esse é o meu Portifólio</p>
-            </div>
         </nav>
+        <span class="material-symbols-outlined">
+            menu
+        </span>
+        <div id="name">
+            <h1>Olá, eu sou <br><strong>Mateus Alves </strong> </h1>
+            <p>E esse é o meu Portifólio</p>
+        </div>
     </header>
     <main>
         <a name="portifolio" id="portifolio"></a>
@@ -42,8 +43,7 @@
                        
                     </div>
                     <h1>Tela de Login</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam rerum velit praesentium a, deleniti voluptatum assumenda mollitia quas. Ipsa aliquam odio repellendus impedit dolor rem asperiores. Ullam quia minima similique!
-                    Suscipit, facilis. Molestias ratione saepe deleniti dicta vero eveniet error dolore quas porro dolorem voluptates modi excepturi delectus laborum, necessitatibus aut! Veritatis eius ad unde id quisquam debitis voluptas error!</p>
+                    <p>Fiz esse projeto através do curso de HTML5 e CSS3 do CursoEmVídeo. Um simples sistema de login responsivo para telas grandes média e pequenas. Com esse projeto aprendi bastante sobre: <strong>Responsividade</strong>, <strong>Medias Queries</strong> e <strong>Mobile First</strong>.</p>
                     <div class="access">
                         <a href="https://mateus-ads.github.io/projeto-login/" target="_blank" rel="external">Acessar</a>
                     </div>   
@@ -56,8 +56,7 @@
                         <img src="imagens/projeto02.png" alt="projeto02">
                     </div>
                     <h1>Redes Sociais</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus reprehenderit at laboriosam tempore saepe ullam consequuntur impedit minima et ipsam deserunt exercitationem quasi dolorem ea, ratione deleniti illo quod! Itaque.
-                    Autem iusto perspiciatis error exercitationem aperiam quis, dolorem quod eveniet consequatur obcaecati. Explicabo alias molestias mollitia quibusdam, hic unde ipsa eius nihil impedit sunt asperiores quas rerum cum cumque fugit?</p>
+                    <p>Outro projeto feito através do CursoEmVídeo. É basicamente um site que leva para minhas redes sociais. Fazendo esse projeto aprendi bastante sobre <strong>iFrames</strong> e <strong>Links</strong>.</p>
                     <div class="access">
                         <a href="https://mateus-ads.github.io/projeto-social/" target="_black" rel="external">Acessar</a>
                     </div>   
@@ -90,7 +89,7 @@
             </div>
             <h2>JavaScript</h2>
             <div class="progress-bar">
-                <div class="progress-javascript">10%</div>
+                <div class="progress-javascript">15%</div>
             </div>
        </div>
     </aside>
@@ -122,26 +121,7 @@
         </div>
         
     </footer>
-    <script>
-        function mudouTamanho() {
-            if (window.innerWidth >= 910) {
-                menu.style.display = 'flex'
-            } else {
-                menu.style.display = 'none'
-            }
-        }
-
-        function clickMenu() {
-           
-            if(menu.style.display == 'flex') {
-                menu.style.display = 'none'
-                
-            } else {
-                menu.style.display = 'flex'
-                
-            }
-        }
-    </script>
+<script src="js/script.js"></script>
 </body>
 
 </html>
