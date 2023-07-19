@@ -1,7 +1,72 @@
 
 const buttonMenu = document.querySelector('.material-symbols-outlined')
 const menu = document.querySelector('#menu')
+let progressHtml = document.querySelector('.progress-html')
+let progressCss = document.querySelector('.progress-css')
+let progressJs = document.querySelector('.progress-javascript')
 
+window.sr = ScrollReveal({reset: true});
+sr.reveal('#name', {
+    rotate: {x:0,y:80,z:0},
+    duration : 2000
+});
+
+sr.reveal('#projetos' , {duration : 2000
+})
+sr.reveal('#sobre', {duration : 2000
+})
+
+sr.reveal('#name' , {duration: 2000})
+sr.reveal('#skils' , {duration: 2000})
+sr.reveal('#form' , {duration: 2000})
+
+let progresses = {
+    progressStartValueHtml : 0,
+    progressEndValueHtml : 40,
+    speedHtml : 40,
+
+    progressStartValueCss : 0,
+    progressEndValueCss : 30,
+    speedCss : 60,
+
+    progressStartValueJs : 0,
+    progressEndValueJs : 20,
+    speedJs : 90,
+
+
+}
+
+setTimeout(()=> {
+    let progress = setInterval(()=> {
+   
+        progresses.progressStartValueHtml++
+        progressHtml.textContent = `${progresses.progressStartValueHtml}%`
+        if(progresses.progressStartValueHtml == progresses.progressEndValueHtml) {
+            clearInterval(progress)
+        }
+    }, progresses.speedHtml)
+},1500)
+
+setTimeout(()=> {
+    let progress = setInterval(()=> {
+        progresses.progressStartValueCss++
+        progressCss.textContent = `${progresses.progressStartValueCss}%`
+        if(progresses.progressStartValueCss == progresses.progressEndValueCss){
+            clearTimeout(progress)
+        }
+    },progresses.speedCss)
+    
+},1400)
+
+setTimeout(() => {
+    let progress = setInterval(()=> {
+        progresses.progressStartValueJs++
+        progressJs.textContent = `${progresses.progressStartValueJs}%`
+        if(progresses.progressStartValueJs == progresses.progressEndValueJs) {
+            clearTimeout(progress)
+        }
+    },progresses.speedJs)
+},1350)
 buttonMenu.addEventListener('click',() => {
     menu.classList.toggle('show')
 })
@@ -13,5 +78,7 @@ function changedSize() {
         }
     }
 }
+
+
 
 

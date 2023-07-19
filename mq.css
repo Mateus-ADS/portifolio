@@ -55,6 +55,10 @@
        
         background-color: rgb(34, 34, 34);
     }
+
+    main {
+        margin-bottom: 10rem;
+    }
     div#projetos > div.proj01 {
         margin-top: 20rem;
     }
