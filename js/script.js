@@ -5,21 +5,6 @@ let progressHtml = document.querySelector('.progress-html')
 let progressCss = document.querySelector('.progress-css')
 let progressJs = document.querySelector('.progress-javascript')
 
-window.sr = ScrollReveal({reset: true});
-sr.reveal('#name', {
-    rotate: {x:0,y:80,z:0},
-    duration : 2000
-});
-
-sr.reveal('#projetos' , {duration : 2000
-})
-sr.reveal('#sobre', {duration : 2000
-})
-
-sr.reveal('#name' , {duration: 2000})
-sr.reveal('#skils' , {duration: 2000})
-sr.reveal('#form' , {duration: 2000})
-
 let progresses = {
     progressStartValueHtml : 0,
     progressEndValueHtml : 40,
@@ -30,7 +15,7 @@ let progresses = {
     speedCss : 60,
 
     progressStartValueJs : 0,
-    progressEndValueJs : 20,
+    progressEndValueJs : 30,
     speedJs : 90,
 
 
@@ -67,6 +52,7 @@ setTimeout(() => {
         }
     },progresses.speedJs)
 },1350)
+
 buttonMenu.addEventListener('click',() => {
     menu.classList.toggle('show')
 })

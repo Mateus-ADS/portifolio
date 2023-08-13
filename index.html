@@ -69,7 +69,7 @@
     <aside>
         <div class="container-content">
             <div id="sobre">
-                <a name="sobre" id="sobre"></a>
+                <a name="sobre"></a>
                    <h1>Sobre min</h1>
                    <p>Meu nome é <strong>Mateus Alves</strong> atualmente estou estudando para me tornar um <strong>Desenvolvedor Front End</strong>. Ainda não tenho experiência na área, mas estou em busca de uma oportunidade para aperfeiçoar minhas habilidades.</p>
                </div>
@@ -100,22 +100,33 @@
     <footer>
         <a name="contato" id="contato"></a>
         <h1>Contato</h1>
-        <form action="#" id="formulario">
+        <form action="https://formsubmit.co/contato-mateusads@outlook.com" method="POST" id="formulario">
+            <label for="iname">Seu Nome:
+                <input type="text" name="nome" id="iname" required autocomplete="name">
+            </label>
+
+            <label for="iemail">Seu Email:
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </label>
+
             <h1>Escreva sua mensagem:</h1>
-            <textarea name="text" id="itext" cols="30" rows="10"> 
+            <textarea name="message" id="itext" cols="20" rows="10"> 
             </textarea>
-            <input type="button" value="Enviar">
+            
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/agradecimento.html">
+            <input type="submit" value="Enviar">
         </form>
         
         <h1>Redes</h1>
         <div id="social">
-            <a href="#">
+            <a href="https://www.facebook.com/profile.php?id=100003189582999" target="_blank" rel="external">
                 <ion-icon  name = "logo-facebook" > </ion-icon>
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/mateus-alves-025a06233/" target="_blank" rel="external">
                 <ion-icon name="logo-linkedin"></ion-icon>
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/mateusalves9611/" target="_blank" rel="external">
                 <ion-icon name="logo-instagram"></ion-icon>
             </a> 
         </div>

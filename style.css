@@ -1,7 +1,6 @@
 @charset "UTF-8";
 :root {
     --destaque: #d35050fd;
-    --counter: '0';
 }
 * {
     margin: 0;
@@ -19,15 +18,13 @@ body {
     grid-template-rows: 1fr 1fr 1fr 1fr;  
     grid-template-columns: 1fr;
     grid-template-areas: 'header '
-                            'main '
-                                'aside '
-                                    'footer';    
+                         'main '
+                         'aside '
+                         'footer';    
    
     background-color: rgb(34, 34, 34);
 }
-#projetos, #sobre,#skils,#form,#name {
-    visibility: hidden;
-}
+
 header {
     grid-area: header;
     text-align: center;
@@ -87,25 +84,24 @@ nav > ul > li {
 main {
     grid-area: main;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     color: #fff;
-    width: 80%;
+    width: 100%;
     height: 100%;
-    margin: 0 auto;
     padding: 50px;
 }
 main > h1 {
     margin: 5% 5%;
-    
 }
 main > div#projetos {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 15px;
-    margin: 0 auto;
-    max-width: 900px;
-    
+    gap: 10rem;
 }
 .access > a {
    text-decoration: none;
@@ -126,7 +122,7 @@ main > div#projetos {
   
 }
 div#projetos > div.proj01 {
-    width: min-content;
+    width: 500px;
     margin-top: 4.6rem;
     display: flex;
     align-items: flex-end;
@@ -146,7 +142,7 @@ div#projetos > div.proj01 > div > h1 {
     color: var(--destaque);
 }
 div#projetos > div.proj01 > div > div.img > img {
-    width: 350px;
+    width: 100%;
     height: 280px;
     object-fit: cover;
 } 
@@ -156,7 +152,7 @@ div#projetos > div.proj02 > div > h1 {
     color: var(--destaque);
 }
 div#projetos > div.proj02 > div > div.img > img {
-    width: 350px;
+    width: 100%;
     height: 280px;
     object-fit: cover;
 } 
@@ -168,8 +164,7 @@ div#projetos > div.proj01 > div > p {
     padding: 20px;
 }
 div#projetos > div.proj02 {
-    width: min-content;
-    
+    width: 500px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -285,16 +280,19 @@ footer {
    align-items: center;
    max-width: 500px;
    gap: 15px;
+  
 }
 #formulario > h1 {
-    width: 100%;
     text-align: center;
     margin-bottom: 50px;
 }
 #formulario > #itext {
    width: 100%;
+   border-radius: 8px;
+   outline: none;
+   border: none;
 }
-#formulario > input[type="button"] {
+#formulario > input[type="submit"] {
     width: 400px;
     height: 55px;
     border-radius: 10px;
@@ -302,10 +300,23 @@ footer {
     color: #fff;
     font-size: 30px;
 }
-#formulario > input[type="button"]:hover {
+#formulario > input[type="submit"]:hover {
     background-color: #ab4040;
     cursor: pointer;
 }
+label {
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+label > input {
+    width: 500px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
 #social {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -363,6 +374,6 @@ header span.material-symbols-outlined {
 @keyframes progress-bar-js {
    
     to{
-        width: 15%;
+        width: 30%;
     }
 }

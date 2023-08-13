@@ -1,5 +1,4 @@
 @media screen and (max-width: 910px){
-   
     header > nav > ul {
         display: none;
         flex-direction: column; 
@@ -30,8 +29,9 @@
         transition: width .4s;
     }
     header {
-        background: none;
+        background: #343434;
     }
+   
     header span.material-symbols-outlined {
         display: block;
         cursor: pointer;
@@ -62,5 +62,25 @@
     div#projetos > div.proj01 {
         margin-top: 20rem;
     }
-    
+    div#projetos > div.proj01 , div#projetos > div.proj02  {
+        width: fit-content;
+    }
+   
+    div.container-content {
+        display: flex;
+        flex-direction: row;
+        gap: 10rem;
+    }
+    div.container-content p {
+        width: 400px;
+    }
+
+    #formulario {
+        padding: 10px;
+     }
+     
+    label > input {
+        width: 300px;
+        
+    }
 }
