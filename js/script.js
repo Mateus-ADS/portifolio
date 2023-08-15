@@ -16,7 +16,7 @@ let progresses = {
 
     progressStartValueJs : 0,
     progressEndValueJs : 30,
-    speedJs : 90,
+    speedJs : 60,
 
 
 }

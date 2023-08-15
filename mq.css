@@ -41,7 +41,7 @@
         padding: 10px;
     }
     header span.material-symbols-outlined:hover {
-        background-color: rgba(190, 64, 64, 0.992);
+        background-color: rgb(48, 48, 255);
     }
 
     body {

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 :root {
-    --destaque: #d35050fd;
+    --destaque: #5563fbfd;
 }
 * {
     margin: 0;
@@ -225,7 +225,7 @@ aside > div.container-content > div#skils {
 aside > div.container-content > div#skils > div.progress-bar {
     width: 400px;
     height: 25px;
-    border: 1px solid #B54545;
+    border: 1px solid var(--destaque);
     margin: 10px;
     border-radius: 10px;
 }
@@ -236,7 +236,7 @@ aside > div.container-content > div#skils > div.progress-bar > div.progress-html
     animation: progress-bar-html 1.5s 1.7s linear forwards;
     width: 0%;
     height: 100%;
-    background-color: #B54545;
+    background-color: var(--destaque);
 }
 
 
@@ -245,13 +245,13 @@ aside > div.container-content > div#skils > div.progress-bar > div.progress-css 
     animation: progress-bar-css 1.5s 1.7s linear forwards;
     width: 0%;
     height: 100%;
-    background-color: #B54545;
+    background-color: var(--destaque);
 }
 aside > div.container-content > div#skils > div.progress-bar > div.progress-javascript {
     border-radius: 10px;
 
     height: 100%;
-    background-color: #B54545;
+    background-color: var(--destaque);
     width: 0%;
     animation: progress-bar-js 1.5s 1.75s linear forwards;
 }
@@ -296,12 +296,14 @@ footer {
     width: 400px;
     height: 55px;
     border-radius: 10px;
-    background-color: #B54545;
+    background-color: var(--destaque);
     color: #fff;
     font-size: 30px;
+    border: none;
+    transition: .5s;
 }
 #formulario > input[type="submit"]:hover {
-    background-color: #ab4040;
+    background-color: rgb(48, 48, 255);
     cursor: pointer;
 }
 label {
