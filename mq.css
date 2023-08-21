@@ -1,4 +1,6 @@
+
 @media screen and (max-width: 910px){
+   
     header > nav > ul {
         display: none;
         flex-direction: column; 
@@ -58,6 +60,7 @@
 
     main {
         margin-bottom: 10rem;
+        padding: 10px;
     }
     div#projetos > div.proj01 {
         margin-top: 20rem;
@@ -74,13 +77,37 @@
     div.container-content p {
         width: 400px;
     }
-
-    #formulario {
-        padding: 10px;
-     }
      
     label > input {
         width: 300px;
         
     }
+    .wrapper .static {
+        position: absolute;
+        top: 40%;
+    }
+    .wrapper .dynamic {
+        margin-left: 0;  
+        position: absolute;
+        top:70%;
+        overflow: hidden;
+        height: 8vh;
+        
+       
+    }
+    .wrapper .dynamic li {
+        top: -15px;
+    }
+    .wrapper {
+        flex-direction: column;
+        width: min-content;
+    }
+    @keyframes slide {
+        100% {
+            top: -140px;
+        }
+    }
+    
+    
+    
 }
