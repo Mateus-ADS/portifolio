@@ -1,12 +1,9 @@
-
 @media screen and (max-width: 910px){
-   
     header > nav > ul {
         display: none;
         flex-direction: column; 
         margin: 0;
         background-color: var(--destaque);
-        
     }
     
     header > nav > ul > li {
@@ -60,7 +57,6 @@
 
     main {
         margin-bottom: 10rem;
-        padding: 10px;
     }
     div#projetos > div.proj01 {
         margin-top: 20rem;
@@ -77,6 +73,10 @@
     div.container-content p {
         width: 400px;
     }
+
+    #formulario {
+        padding: 10px;
+     }
      
     label > input {
         width: 300px;
@@ -92,8 +92,6 @@
         top:70%;
         overflow: hidden;
         max-height: 4vh;
-        
-       
     }
     .wrapper .dynamic li {
         top: -9px;
@@ -107,7 +105,4 @@
             top: -120px;
         }
     }
-    
-    
-    
 }

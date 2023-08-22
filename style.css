@@ -7,6 +7,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+   
 }
 html {
     scroll-behavior: smooth;
@@ -25,60 +27,9 @@ body {
 
 header {
     grid-area: header;
-    background-color: #343434;   
     text-align: center;
-    overflow: hidden;
-}
-.wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    height: 8vh;
-    overflow: hidden;
-    margin: 0 auto;
-    margin-top: 40vh;
-}
-
-.wrapper .static {
-    font-size: 3em;
-    color: #fff;
-}
-.wrapper .dynamic {
-   text-align: left;
-   margin-left: 5%;
-}
-.wrapper .dynamic li {
-    list-style: none;
-    font-size: 3em;
-    color: var(--destaque);
-    position: relative;
-    top: 35px;
-    animation: slide 6s steps(2) infinite;
-    
-}
-.wrapper .dynamic li::after {
-    content: '';
-    position: absolute;
-    left: 0;
     background-color: #343434;
-    height: 100%;
-    width: 100%;
-    border-left: 2px solid var(--destaque);
-    animation: typing 3s steps(15) infinite;
-}
-@keyframes typing {
-    40%,60% {
-        left: 105%;
-    }
-    100% {
-        left: 0;
-    }
-}
-@keyframes slide {
-    100% {
-        top: -90px;
-    }
+
 }
 nav > ul > li > a {
     text-decoration: none;
@@ -99,6 +50,25 @@ nav > ul > li > a:hover::after {
     transition: width .5s;
 }
 
+div#name  {
+    margin: 15% 20%;
+    color: #fff;
+    line-height: 80px;
+}
+div#name  strong {
+    color: var(--destaque);
+}
+div#name > h1 {
+    font-size: 2.8em;
+    font-weight: lighter;
+} 
+div#name > h1 > strong {
+    font-size: 2em;
+}
+div#name > p {
+    font-size: 1.2em;
+    color: #ffffff;
+}
 nav > ul {
     margin-top: 30px;
     display: flex;
