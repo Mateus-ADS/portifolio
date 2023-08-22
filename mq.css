@@ -91,12 +91,12 @@
         position: absolute;
         top:70%;
         overflow: hidden;
-        height: 8vh;
+        max-height: 4vh;
         
        
     }
     .wrapper .dynamic li {
-        top: -15px;
+        top: -9px;
     }
     .wrapper {
         flex-direction: column;
@@ -104,7 +104,7 @@
     }
     @keyframes slide {
         100% {
-            top: -140px;
+            top: -120px;
         }
     }
     
